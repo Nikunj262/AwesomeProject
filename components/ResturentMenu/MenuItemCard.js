@@ -38,7 +38,7 @@ const MenuItemCard = (props) => {
                 <View className='flex-1 pr-8 space-y-1'>
                     <Text className='text-2xl'>{props.name}</Text>
                     <Text className='text-gray-500'>{props.desc}</Text>
-                    <Text className='text-gray-500'>$ {props.price}</Text>
+                    <Text className='text-gray-500' style={{ color: '#00CCBB' }}>$ {props.price}</Text>
                 </View>
                 <Image source={{ uri: props.img }} className="rounded" style={{ width: 80, height: 80, objectFit: 'cover' }} />
 
