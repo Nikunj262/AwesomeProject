@@ -211,3 +211,10 @@ export const categories = [
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Placeholder_Plates@3x.png',
   },
 ];
+
+export const photo = [
+  {
+    id: 1,
+    image: 'https://avatars.githubusercontent.com/u/64143721?v=4',
+  },
+];

@@ -101,7 +101,7 @@ const DeliveryScreen = () => {
             {/* Delivery boy details */}
             <View className='bg-white px-4 py-2 flex-row justify-between items-center'>
                 <View className='flex-row space-x-3 items-center'>
-                    <Image src='https://media.licdn.com/dms/image/C4D03AQGp4-ZOASJhew/profile-displayphoto-shrink_400_400/0/1662927303975?e=1686787200&v=beta&t=Ff49XQJVHJePs3eKejwpJmlcH2qeTOEMsE3MXif_yE4' className='h-14 w-14 rounded-full' />
+                    <Image src='https://avatars.githubusercontent.com/u/64143721?v=4' className='h-14 w-14 rounded-full' />
                     <View>
                         <Text className='text-lg font-semibold'>Nikunj</Text>
                         <Text className='text-gray-400'>Your delivery boy</Text>
