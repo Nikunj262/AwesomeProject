@@ -87,14 +87,14 @@ const DeliveryScreen = () => {
                     coordinate={coordinates[0]}
                     title='Delivery Boy'
                     pinColor='#cc0000'
-                    image={require('../assets/icon.png')}
+                    image={require('../assets/deliveryboy.png')}
                 />
 
                 <Marker
                     coordinate={coordinates[1]}
                     title='Home'
                     pinColor='#cc0000'
-                    image={require('../assets/icon.png')}
+                    image={require('../assets/homeLocation.png')}
                 />
             </MapView>
 
