@@ -23,7 +23,7 @@ const FeatureCard = (props) => {
                     </View>
                     <View className='text-md flex-row space-x-3 items-center'>
                         <Icon name='location-on' size={20} color='#00CCBB' />
-                        <Text className="text-gray-500 text-lg">nearby</Text>
+                        <Text className="text-gray-500 text-lg">Near by</Text>
                         <Text className="text-gray-500 text-lg">{props.location}</Text>
                     </View>
                 </View>

@@ -6,7 +6,7 @@ const CategoryCard = ({ img, name }) => {
         <View>
             <TouchableOpacity className="relative mx-1 content-center items-center">
                 <Image source={{ uri: img }} className=" h-20 w-20 rounded-xl" />
-                <Text className="text-center font-bold text-md text-gray-800 pt-1 w-20">{name}</Text>
+                <Text className="text-center font-bold text-md text-gray-800 pt-1 w-21">{name}</Text>
             </TouchableOpacity>
         </View>
     )

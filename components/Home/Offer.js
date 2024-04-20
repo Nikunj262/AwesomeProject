@@ -11,9 +11,9 @@ const Offer = () => {
             <View className='px-3 pt-3 pb-2'>
                 <View className='flex-row justify-between align-center'>
                     <Text className="font-bold text-2xl text-gray-800">Offers near you!</Text>
-                    <Icon name='md-arrow-forward-sharp' size={25} color='#00CCBB' />
+                    <Icon name='arrow-forward' size={25} color='#00CCBB' />
                 </View>
-                <Text className='text-gray-600'>Why not support your local resturant tonight</Text>
+                <Text className='text-gray-600'>Why not supporting your local resturant tonight</Text>
             </View>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{
                 paddingTop: 10,
@@ -22,7 +22,7 @@ const Offer = () => {
                 {
                     data.map((offer) => {
                         return (
-                            <View>
+                            <View key={offer.id}>
                                 <OfferCard key={offer.id} id={offer.id} img={offer.image} name={offer.name} cat={offer.category} price={offer.price} location={offer.location} des={offer.desc} />
                             </View>
                         )

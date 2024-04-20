@@ -51,7 +51,7 @@ const BasketScreen = () => {
                     <View className='flex-row items-center space-x-3'>
                         <Image src="https://images.unsplash.com/photo-1619454016518-697bc231e7cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
                             className=" h-9 w-9 rounded-full" />
-                        <Text className='text-lg'>Deliver in 50-70 min</Text>
+                        <Text className='text-lg'>Deliver in 30-35 min</Text>
                     </View>
                     <Text className='text-lg text-[#00CCBB]'>Change</Text>
                 </View>

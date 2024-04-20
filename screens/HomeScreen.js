@@ -27,7 +27,7 @@ const HomeScreen = () => {
                     />
                     <View>
                         <Text className=" text-sm text-gray-500">Deliver Now</Text>
-                        <Text className=" font-bold text-xl">Current Location <Icon name="down" size={20} color="#00CCBB" /></Text>
+                        <Text className=" font-bold text-xl">Your Current Location <Icon name="down" size={20} color="#00CCBB" /></Text>
                     </View>
                 </View>
                 <Icon2 name="user-circle-o" size={33} color="#00CCBB" />

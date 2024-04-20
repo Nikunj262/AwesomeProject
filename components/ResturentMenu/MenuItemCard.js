@@ -40,7 +40,9 @@ const MenuItemCard = (props) => {
                     <Text className='text-gray-500'>{props.desc}</Text>
                     <Text className='text-gray-500'>$ {props.price}</Text>
                 </View>
-                <Image source={{ uri: props.img }} className=" h-20 w-20" />
+                <Image source={{ uri: props.img }} className="rounded" style={{ width: 80, height: 80, objectFit: 'cover' }} />
+
+
             </TouchableOpacity>
             {isPressed && <View className='flex-row mt-4 space-x-3 items-center'>
                 <TouchableOpacity onPress={removeItemsFromBasket} >

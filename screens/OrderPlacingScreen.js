@@ -30,7 +30,7 @@ const OrderPlacingScreen = () => {
             <Animatable.Text
                 animation="slideInUp" iterationCount={1}
                 className='text-lg text-white mt-7' >
-                Waining for resturent to acccept your order
+                Waiting for resturent to acccept the order
             </Animatable.Text>
             <Progress.Bar progress={bar} width={200} height={7} className='mt-5 rounded-xl' color='white' />
         </SafeAreaView>

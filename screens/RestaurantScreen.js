@@ -31,7 +31,7 @@ const RestaurantScreen = () => {
             onPress={() => {
               navigation.goBack()
             }} >
-            <Icon name='md-arrow-back-sharp' size={25} color='#00CCBB' />
+            <Icon name='arrow-back' size={25} color='#00CCBB' />
           </TouchableOpacity>
           
           {/* Food description */}
@@ -45,7 +45,7 @@ const RestaurantScreen = () => {
               </View>
               <View className='text-md flex-row space-x-2 items-center'>
                 <Icon2 name='location-on' size={20} color='#00CCBB' />
-                <Text className="text-gray-500 text-lg">nearby</Text>
+                <Text className="text-gray-500 text-lg">Nearby</Text>
                 <Text className="text-gray-500 text-lg">{route.params.location}</Text>
               </View>
             </View>
@@ -61,7 +61,7 @@ const RestaurantScreen = () => {
         </View>
 
         {/* Food Menu */}
-        <Text className='text-2xl font-bold pt-6 pb-4 pl-4'>Menu</Text>
+        <Text className='text-2xl font-bold pt-6 pb-4 pl-4'>Checkout Our Menu</Text>
         <View className=' pb-[71px]'>
           <Menu category={route.params.cat} />
         </View>

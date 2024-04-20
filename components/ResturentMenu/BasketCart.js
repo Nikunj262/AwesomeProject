@@ -15,7 +15,7 @@ const BasketCart = () => {
     <TouchableOpacity className="bg-[#00CCBB] w-full flex-row justify-around py-3 rounded-xl items-center"
       onPress={() => { navigation.navigate('Basket') }} >
       <Text className='text-xl font-semibold text-white bg-[#12a397] px-2 py-1 rounded-lg'>{items.length}</Text>
-      <Text className='text-xl font-semibold text-white'> View Basket </Text>
+      <Text className='text-xl font-semibold text-white'> View your Basket </Text>
       <Text className='text-xl font-semibold text-white'>$ {totalCost.toFixed(2)}</Text>
     </TouchableOpacity>
   )
