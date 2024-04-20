@@ -18,6 +18,8 @@ const BasketScreen = () => {
     const navigation = useNavigation();
     const dispatch = useDispatch();
 
+    const hstGstAmount = (subtotal + (JSON.stringify(groupedItems) === '{}' ? 0 : 5.99)) * 0.13;
+    const orderTotal = subtotal + hstGstAmount + (JSON.stringify(groupedItems) === '{}' ? 0 : 5.99);
 
     useMemo(() => {
         const basketItems = items.reduce((result, item) => {
@@ -96,8 +98,12 @@ const BasketScreen = () => {
                         <Text className='text-gray-500'>$ {JSON.stringify(groupedItems) === '{}' ? '0.00' : 5.99}</Text>
                     </View>
                     <View className='flex-row justify-between px-5 pt-4'>
+                        <Text className='text-gray-500'>HST/GST - 13%</Text>
+                        <Text className='text-gray-500'>$ {hstGstAmount.toFixed(2)}</Text>
+                    </View>
+                    <View className='flex-row justify-between px-5 pt-4'>
                         <Text className='font-bold'>order Total</Text>
-                        <Text className='font-bold'>$ {(subtotal + (JSON.stringify(groupedItems) === '{}' ? 0 : 5.99)).toFixed(2)}</Text>
+                        <Text className='font-bold'>$ {orderTotal.toFixed(2)}</Text>
                     </View>
                 </View>
                 <TouchableOpacity className='mx-4 my-5 p-3 rounded-lg bg-[#00CCBB]' onPress={() => { navigation.navigate("OrderPlacing") }} >

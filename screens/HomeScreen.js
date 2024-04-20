@@ -45,7 +45,7 @@ const HomeScreen = () => {
             {/* Body */}
             <ScrollView showsVerticalScrollIndicator={false} className="bg-gray-100">
                 {/* categories */}
-                <Category />
+                <Category />    
                 {/* Offer near you */}
                 <Offer />
                 {/* Feature */}
