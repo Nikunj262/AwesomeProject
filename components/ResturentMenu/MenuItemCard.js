@@ -31,7 +31,7 @@ const MenuItemCard = (props) => {
     // and then inside the selectBasketItemsWithId function we are filtering the items array and then we are getting the items which have the same id as the id of the card which we are clicking
     const items = useSelector((state) => selectBasketItemsWithId(state, props.id));
 
-
+ 
     return (
         <View className={`px-4 py-4 border-t border-gray-300 bg-white`}>
             <TouchableOpacity className="flex-row justify-between" onPress={() => { setIsPressed(!isPressed) }}>
